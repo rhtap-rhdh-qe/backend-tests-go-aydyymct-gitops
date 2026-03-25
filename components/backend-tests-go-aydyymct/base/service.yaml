@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: backend-tests-go-aydyymct
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: backend-tests-go-aydyymct 
+  name: backend-tests-go-aydyymct
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: backend-tests-go-aydyymct 
